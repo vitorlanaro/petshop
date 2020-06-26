@@ -23,7 +23,11 @@ export default class Main extends Component {
         return (
             <div className = "product-list">
                 {this.state.products.map(products => (
-                    <h2>{products.nome}-{products.valor}$</h2>
+                    <article key={products._id}>
+                        <strong>{products.nome}-{products.valor}$</strong>
+                        <p>{products.descricao}</p>
+                        <button>Comprar</button>
+                    </article>
                 ))}
             </div>
         )
