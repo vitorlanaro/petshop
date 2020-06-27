@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './style.css'
 
 const Header = () => (
-    <header id="main-header">Header</header>
+    <header id="main-header">PetShop</header>
 );
 
 //igual
